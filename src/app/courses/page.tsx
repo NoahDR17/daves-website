@@ -74,7 +74,7 @@ export default function Courses() {
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Courses</h1>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Five FAA accredited courses, from a four-hour awareness session through to the full two-day qualification. All delivered in person by Dave, in your workplace or a venue of your choice.
+            Five FAA accredited courses, from a four-hour awareness session through to the full two-day qualification. All delivered in person by David, in your workplace or a venue of your choice.
           </p>
         </div>
       </section>
@@ -172,16 +172,16 @@ export default function Courses() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row gap-8 items-center border border-gray-100 rounded-lg p-8 shadow-sm">
           <div className="bg-gray-200 rounded-lg w-24 h-24 shrink-0 flex items-center justify-center text-gray-400 text-xs">
-            [Dave]
+            [David]
           </div>
           <div className="flex-1">
-            <h2 className="font-bold text-gray-900 mb-1">All courses are taught by Dave</h2>
+            <h2 className="font-bold text-gray-900 mb-1">All courses are taught by David</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               An NHS mental health nurse, not just a trainer. Decades of clinical experience in the room with you.
             </p>
           </div>
           <Link href="/about" className="shrink-0 text-blue-700 font-medium text-sm hover:underline whitespace-nowrap">
-            Meet Dave →
+            Meet David →
           </Link>
         </div>
       </section>
@@ -205,7 +205,7 @@ export default function Courses() {
       {/* FINAL CTA */}
       <section className="bg-gray-900 py-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-3">Ready to book training for your team?</h2>
-        <p className="text-gray-400 mb-8">Enquire now and Dave will be in touch within two working days.</p>
+        <p className="text-gray-400 mb-8">Enquire now and David will be in touch within two working days.</p>
         <Link
           href="/contact"
           className="bg-white text-gray-900 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors"

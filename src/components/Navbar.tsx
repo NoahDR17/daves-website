@@ -7,7 +7,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Courses" },
   { href: "/for-organisations", label: "For Organisations" },
-  { href: "/about", label: "About Dave" },
+  { href: "/about", label: "About David" },
   { href: "/faqs", label: "FAQs" },
 ];
 
@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex flex-col leading-tight">
-            <span className="font-bold text-gray-900 text-base">Dave Scott</span>
+            <span className="font-bold text-gray-900 text-base">David Scott</span>
             <span className="text-xs text-gray-500">Mental Health First Aid</span>
           </Link>
 

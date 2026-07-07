@@ -7,7 +7,7 @@ const benefits = [
   },
   {
     title: "One point of contact",
-    desc: "You speak to Dave directly from enquiry to delivery. No account managers, no handoffs.",
+    desc: "You speak to David directly from enquiry to delivery. No account managers, no handoffs.",
   },
   {
     title: "Flexible delivery",
@@ -17,9 +17,9 @@ const benefits = [
 
 const steps = [
   { step: "01", title: "You enquire", desc: "Share what your team needs and roughly when. Form, email, or phone." },
-  { step: "02", title: "A short scoping call", desc: "Dave gets a feel for your team, current challenges, and recommends the right course." },
+  { step: "02", title: "A short scoping call", desc: "David gets a feel for your team, current challenges, and recommends the right course." },
   { step: "03", title: "We agree the details", desc: "Course, dates, venue, group size, invoicing. Written quote with everything included." },
-  { step: "04", title: "Dave delivers the training", desc: "In person at your venue. Manuals provided. Certificates issued shortly after." },
+  { step: "04", title: "David delivers the training", desc: "In person at your venue. Manuals provided. Certificates issued shortly after." },
   { step: "05", title: "Ongoing support", desc: "MHFAider Support App access for 3 years. A reminder when refreshers are due." },
 ];
 
@@ -41,7 +41,7 @@ const youProvide = [
 
 const faqs = [
   { q: "What's the minimum and maximum group size?" },
-  { q: "What area does Dave cover?" },
+  { q: "What area does David cover?" },
   { q: "Can you run multiple sessions for a larger team?" },
   { q: "How is payment handled?" },
   { q: "Do you provide an attendee evaluation?" },
@@ -82,7 +82,7 @@ export default function ForOrganisations() {
       {/* WHY ORGANISATIONS CHOOSE DAVE */}
       <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why organisations choose Dave</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why organisations choose David</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
@@ -123,7 +123,7 @@ export default function ForOrganisations() {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">What&apos;s included</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg p-8 border border-gray-100">
-              <h3 className="font-bold text-gray-900 mb-4">Dave provides</h3>
+              <h3 className="font-bold text-gray-900 mb-4">David provides</h3>
               <ul className="space-y-2">
                 {daveProvides.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-gray-600 text-sm">
@@ -174,15 +174,15 @@ export default function ForOrganisations() {
       <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-gray-200 rounded-lg aspect-square max-w-sm mx-auto flex items-center justify-center text-gray-400 text-sm w-full">
-            [Photo of Dave]
+            [Photo of David]
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">You&apos;ll work directly with Dave</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">You&apos;ll work directly with David</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Registered NHS mental health nurse with decades of clinical practice. No account managers, no handoffs — Dave handles the conversation and delivers the training.
+              Registered NHS mental health nurse with decades of clinical practice. No account managers, no handoffs — David handles the conversation and delivers the training.
             </p>
             <Link href="/about" className="text-blue-700 font-medium hover:underline">
-              Meet Dave →
+              Meet David →
             </Link>
           </div>
         </div>

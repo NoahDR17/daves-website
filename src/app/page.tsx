@@ -10,9 +10,9 @@ const courses = [
 
 const steps = [
   { step: "01", title: "Enquire", desc: "Tell us about your team and what you need." },
-  { step: "02", title: "Scoping call", desc: "Dave recommends the right course for your organisation." },
+  { step: "02", title: "Scoping call", desc: "David recommends the right course for your organisation." },
   { step: "03", title: "Agree details", desc: "Course, dates, venue and a written all-in quote." },
-  { step: "04", title: "Train", desc: "Dave delivers in person at your workplace or venue." },
+  { step: "04", title: "Train", desc: "David delivers in person at your workplace or venue." },
 ];
 
 export default function Home() {
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-gray-100 rounded-lg aspect-[4/3] flex items-center justify-center text-gray-400 text-sm">
-            [Photo of Dave]
+            [Photo of David]
           </div>
         </div>
       </section>
@@ -82,16 +82,16 @@ export default function Home() {
       <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why train with Dave?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why train with David?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Most mental health first aid trainers took a short course to learn to teach. Dave brings over 20 years of clinical NHS practice into every room.
+              Most mental health first aid trainers took a short course to learn to teach. David brings over 20 years of clinical NHS practice into every room.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "Clinical depth", desc: "Answers grounded in real assessment and frontline NHS mental health experience — not just a manual." },
               { title: "Real NHS experience", desc: "Stories and scenarios from two decades across crisis teams, liaison, acute wards, and community care." },
-              { title: "Accurate signposting", desc: "Dave knows exactly how NHS mental health pathways work — so your team gets signposting that is actually useful." },
+              { title: "Accurate signposting", desc: "David knows exactly how NHS mental health pathways work — so your team gets signposting that is actually useful." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Courses</h2>
-            <p className="text-gray-600">FAA accredited courses for organisations of all sizes, delivered in person by Dave.</p>
+            <p className="text-gray-600">FAA accredited courses for organisations of all sizes, delivered in person by David.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {courses.map((course) => (
@@ -135,18 +135,18 @@ export default function Home() {
       <section className="bg-gray-50 py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-gray-200 rounded-lg aspect-square max-w-sm mx-auto flex items-center justify-center text-gray-400 text-sm w-full">
-            [Portrait of Dave]
+            [Portrait of David]
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Dave</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet David</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Dave Scott is a Registered Mental Health Nurse (RMN) with over 20 years of NHS clinical experience. He qualified in 2002 at Edge Hill University and has worked across acute wards, low secure units, crisis teams, psychiatric liaison, and community settings across Merseyside and Lancashire.
+              David Scott is a Registered Mental Health Nurse (RMN) with over 20 years of NHS clinical experience. He qualified in 2002 at Edge Hill University and has worked across acute wards, low secure units, crisis teams, psychiatric liaison, and community settings across Merseyside and Lancashire.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Now an FAA accredited instructor, Dave brings that clinical depth into every training room — giving your team answers that go beyond what any manual can offer.
+              Now an FAA accredited instructor, David brings that clinical depth into every training room — giving your team answers that go beyond what any manual can offer.
             </p>
             <Link href="/about" className="text-blue-700 font-medium hover:underline">
-              Read Dave&apos;s full story →
+              Read David&apos;s full story →
             </Link>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="font-semibold text-gray-900">Booking for yourself, not a team?</p>
-            <p className="text-gray-500 text-sm">Dave primarily delivers in-house training but is happy to discuss individual places. Get in touch.</p>
+            <p className="text-gray-500 text-sm">David primarily delivers in-house training but is happy to discuss individual places. Get in touch.</p>
           </div>
           <Link
             href="/contact"
@@ -189,7 +189,7 @@ export default function Home() {
       {/* FINAL CTA */}
       <section className="bg-gray-900 py-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-3">Ready to bring mental health first aid training to your team?</h2>
-        <p className="text-gray-400 mb-8">No pressure, no obligation. Drop us a note and Dave will get back to you within two working days.</p>
+        <p className="text-gray-400 mb-8">No pressure, no obligation. Drop us a note and David will get back to you within two working days.</p>
         <Link
           href="/contact"
           className="bg-white text-gray-900 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors"

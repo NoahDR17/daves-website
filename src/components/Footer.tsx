@@ -9,7 +9,7 @@ const courses = [
 ];
 
 const info = [
-  { href: "/about", label: "About Dave" },
+  { href: "/about", label: "About David" },
   { href: "/for-organisations", label: "For Organisations" },
   { href: "/faqs", label: "FAQs" },
   { href: "/contact", label: "Contact" },
@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Tagline */}
           <div>
-            <p className="font-bold text-white text-base mb-2">Dave Scott</p>
+            <p className="font-bold text-white text-base mb-2">David Scott</p>
             <p className="text-sm leading-relaxed text-gray-400">
               Mental health first aid training delivered by a registered NHS mental health nurse.
             </p>
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-xs text-gray-500">
-          © {new Date().getFullYear()} Dave Scott. All rights reserved.
+          © {new Date().getFullYear()} David Scott. All rights reserved.
         </div>
       </div>
     </footer>

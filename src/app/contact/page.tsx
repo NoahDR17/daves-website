@@ -50,7 +50,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-3">Get in touch</h1>
           <p className="text-gray-500 text-lg">
-            Use the form below, give Dave a ring, or drop him an email. Most enquiries get a response within two working days.
+            Use the form below, give David a ring, or drop him an email. Most enquiries get a response within two working days.
           </p>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function ContactPage() {
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
                 <div className="text-4xl mb-4">✓</div>
                 <h2 className="text-xl font-bold text-green-800 mb-2">Enquiry sent</h2>
-                <p className="text-green-700">Thanks for getting in touch. Dave will get back to you within two working days.</p>
+                <p className="text-green-700">Thanks for getting in touch. David will get back to you within two working days.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -177,7 +177,7 @@ export default function ContactPage() {
                 </div>
 
                 {status === "error" && (
-                  <p className="text-red-600 text-sm">Something went wrong. Please try again or email Dave directly.</p>
+                  <p className="text-red-600 text-sm">Something went wrong. Please try again or email David directly.</p>
                 )}
 
                 <button
@@ -208,11 +208,11 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1">Area covered</p>
-                <p className="text-gray-700 text-sm">Dave delivers in person across Merseyside and Lancashire. For groups further afield, get in touch — travel can usually be arranged.</p>
+                <p className="text-gray-700 text-sm">David delivers in person across Merseyside and Lancashire. For groups further afield, get in touch — travel can usually be arranged.</p>
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1">Response time</p>
-                <p className="text-gray-700 text-sm">Most enquiries get a personal reply from Dave within two working days.</p>
+                <p className="text-gray-700 text-sm">Most enquiries get a personal reply from David within two working days.</p>
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8">What happens after you enquire</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
-              { tag: "Within 2 days", title: "A personal reply", desc: "From Dave, not an assistant." },
+              { tag: "Within 2 days", title: "A personal reply", desc: "From David, not an assistant." },
               { tag: "If helpful", title: "A short scoping call", desc: "15–20 minutes, no pressure." },
               { tag: "Then", title: "A written quote", desc: "Clear, all-in, no surprises." },
             ].map((item) => (
