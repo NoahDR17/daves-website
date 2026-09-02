@@ -11,6 +11,9 @@ const courses = [
 const info = [
   { href: "/about", label: "About David" },
   { href: "/for-organisations", label: "For Organisations" },
+  { href: "/why-mhfa", label: "Why MHFA?" },
+  { href: "/hse", label: "HSE Guidance" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/faqs", label: "FAQs" },
   { href: "/contact", label: "Contact" },
 ];
@@ -29,9 +32,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Tagline */}
           <div>
-            <p className="font-bold text-white text-base mb-2">David Scott</p>
+            <div className="flex items-center gap-3 mb-3">
+              <img src="/logo-icon.png" alt="" className="h-14 w-auto" />
+              <span className="flex flex-col leading-tight">
+                <span className="font-bold text-white text-lg">Positive Cultures</span>
+                <span className="text-sm text-gray-400">Training and Consultancy</span>
+              </span>
+            </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              Mental health first aid training delivered by a registered NHS mental health nurse.
+              Creating workplaces where people feel heard, supported and able to thrive.
             </p>
           </div>
 
@@ -79,7 +88,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-xs text-gray-500">
-          © {new Date().getFullYear()} David Scott. All rights reserved.
+          © {new Date().getFullYear()} Positive Cultures Training and Consultancy. All rights reserved.
         </div>
       </div>
     </footer>

@@ -2,58 +2,56 @@ import CoursePageTemplate, { CourseData } from "@/components/CoursePageTemplate"
 
 const course: CourseData = {
   slug: "mhfa",
-  eyebrow: "FAA Accredited · Flagship qualification",
+  eyebrow: "FAA Level 2 Award · One Day",
   title: "First Aid for Mental Health",
   description:
-    "Become a certified Mental Health First Aider. Equip your designated people to spot the signs, respond with confidence, and signpost to the right support.",
-  length: "2 days",
+    "A nationally recognised qualification for anyone who wants to become a Mental Health First Aider within their organisation. Develop practical skills to identify mental health concerns, start conversations and provide initial support.",
+  length: "1 day",
   groupSize: "Up to 16",
   format: "In person",
   certified: "3 years",
-  flagship: true,
   learnItems: [
     {
-      title: "Spot the early signs",
-      desc: "Recognise indicators of common mental health conditions — depression, anxiety, psychosis, and suicidal ideation — before they escalate.",
+      title: "Identify mental health conditions",
+      desc: "Recognise indicators of common mental health conditions — depression, anxiety, psychosis, and suicidal ideation — and understand how they present in the workplace.",
     },
     {
-      title: "Have the conversation",
-      desc: "Start supportive conversations with someone in distress, with confidence and without making it worse.",
+      title: "Start supportive conversations",
+      desc: "Develop the confidence to approach someone who may be struggling, listen without judgement, and provide meaningful initial support.",
     },
     {
-      title: "Apply the MHFA action plan",
-      desc: "Use the ALGEE framework to assess risk, listen non-judgementally, give reassurance, and encourage appropriate help.",
+      title: "Apply the First Aid for Mental Health action plan",
+      desc: "Use a structured approach to assess situations, give reassurance, encourage appropriate help-seeking, and know when to act.",
     },
     {
-      title: "Signpost effectively",
-      desc: "Guide colleagues toward the right professional help, with accurate knowledge of NHS and self-help pathways.",
+      title: "Signpost to professional support",
+      desc: "Understand the range of support available — workplace, NHS and community — and help people access what they need.",
     },
   ],
   structure: [
     {
-      label: "Day 1",
+      label: "Morning",
       title: "Understanding mental health",
-      desc: "Foundations: what mental health is, common conditions, stigma, the MHFA action plan, and depression in depth.",
+      desc: "What First Aid for Mental Health is, identifying mental health conditions, stress and its impact, the First Aid for Mental Health action plan.",
     },
     {
-      label: "Day 2",
-      title: "Responding in practice",
-      desc: "Anxiety, psychosis, suicide and self-harm. Practical role-plays, supporting recovery, and self-care for first aiders.",
+      label: "Afternoon",
+      title: "Providing support in practice",
+      desc: "Providing advice and starting conversations, effects of drugs and alcohol, supporting positive mental health in the workplace, self-care.",
     },
   ],
   whoItIsFor:
-    "Anyone your organisation is designating as a mental health first aider — peer-support staff, HR partners, line managers, wellbeing leads, or any employee taking on the first aider role. No prior training required.",
+    "This course is suitable for anyone wishing to become a Mental Health First Aider within their organisation. It is particularly relevant for managers, supervisors, HR professionals, workplace wellbeing champions, healthcare professionals, teachers and educators. No prior knowledge or experience is required.",
   included: [
-    "Printed course manual to keep",
-    "FAA certificate, valid 3 years",
-    "MHFAider Support App access for 3 years",
+    "Learner workbook and course materials",
+    "FAA Level 2 certificate, valid 3 years",
     "Pre-course briefing",
     "Post-course summary for your records",
   ],
   faqs: [
     {
       q: "How many people can attend?",
-      a: "Up to 16 per course. This keeps the group small enough for meaningful discussion and role-play practice.",
+      a: "Up to 16 per course. This keeps the group small enough for meaningful discussion and practical exercises.",
     },
     {
       q: "Where does the course take place?",
@@ -61,18 +59,18 @@ const course: CourseData = {
     },
     {
       q: "What does it cost?",
-      a: "Courses are quoted per session, not per head. Get in touch and David will come back with an all-in quote within two working days.",
+      a: "Up to 12 delegates: £1,150. 13–16 delegates: £1,295. Individual places on open courses are available at £175 per person. Contact us for a quote.",
     },
     {
       q: "What if I want to attend as an individual?",
-      a: "David primarily runs in-house training for organisations, but is happy to discuss options for individuals. Get in touch to find out what's possible.",
+      a: "Individual places may be available on scheduled open courses. Contact us to find out what is currently available.",
     },
   ],
-  ctaTitle: "Ready to certify your Mental Health First Aiders?",
+  ctaTitle: "Ready to develop Mental Health First Aiders in your organisation?",
   related: [
+    { href: "/courses/mhfa-supervising", label: "Step up", title: "Supervising First Aid for Mental Health" },
     { href: "/courses/refresher", label: "Already certified?", title: "Annual Refresher" },
-    { href: "/courses/mhfa-supervising", label: "For supervisors", title: "Supervising First Aid for Mental Health" },
-    { href: "/courses/mhfa-awareness", label: "For all staff", title: "Mental Health First Aid Awareness" },
+    { href: "/courses/mhfa-awareness", label: "Whole-team awareness", title: "Mental Health First Aid Awareness" },
   ],
 };
 

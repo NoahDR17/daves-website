@@ -177,7 +177,7 @@ export default function ContactPage() {
                 </div>
 
                 {status === "error" && (
-                  <p className="text-red-600 text-sm">Something went wrong. Please try again or email David directly.</p>
+                  <p className="text-red-600 text-sm">Something went wrong. Please try again or email us at positiveculture@gmail.com.</p>
                 )}
 
                 <button
@@ -202,8 +202,8 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1">Email</p>
-                <a href="mailto:psychscott@hotmail.co.uk" className="text-gray-900 font-medium hover:text-blue-700 transition-colors break-all">
-                  psychscott@hotmail.co.uk
+                <a href="mailto:positiveculture@gmail.com" className="text-gray-900 font-medium hover:text-blue-700 transition-colors break-all">
+                  positiveculture@gmail.com
                 </a>
               </div>
               <div>

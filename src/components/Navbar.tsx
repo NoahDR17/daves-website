@@ -7,7 +7,9 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Courses" },
   { href: "/for-organisations", label: "For Organisations" },
-  { href: "/about", label: "About David" },
+  { href: "/why-mhfa", label: "Why MHFA?" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
   { href: "/faqs", label: "FAQs" },
 ];
 
@@ -17,11 +19,14 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-tight">
-            <span className="font-bold text-gray-900 text-base">David Scott</span>
-            <span className="text-xs text-gray-500">Mental Health First Aid</span>
+          <Link href="/" className="flex items-center gap-2">
+            <img src="/logo-icon.png" alt="" className="h-10 w-auto" />
+            <span className="flex flex-col leading-tight">
+              <span className="font-bold text-gray-900 text-sm">Positive Cultures</span>
+              <span className="text-xs text-gray-500">Training and Consultancy</span>
+            </span>
           </Link>
 
           {/* Desktop nav */}

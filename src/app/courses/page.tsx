@@ -2,65 +2,65 @@ import Link from "next/link";
 
 const courses = [
   {
-    href: "/courses/mhfa",
-    badge: "Flagship",
-    title: "First Aid for Mental Health",
-    duration: "2 Days",
-    format: "In person",
-    maxGroup: "Up to 16",
-    desc: "For anyone designated as a mental health first aider. Full FAA accreditation, valid 3 years.",
-  },
-  {
     href: "/courses/mhfa-supervising",
-    badge: null,
+    badge: "Level 3 · Most comprehensive",
     title: "Supervising First Aid for Mental Health",
     duration: "2 Days",
     format: "In person",
     maxGroup: "Up to 16",
-    desc: "For those supervising mental health first aiders. Builds confidence in overseeing and supporting the role.",
+    desc: "The most comprehensive qualification available. For those taking a leading role in mental health support within their organisation.",
   },
   {
-    href: "/courses/mhfa-awareness",
-    badge: null,
-    title: "Mental Health First Aid Awareness",
-    duration: "4 Hours",
+    href: "/courses/mhfa",
+    badge: "Level 2",
+    title: "First Aid for Mental Health",
+    duration: "1 Day",
     format: "In person",
-    maxGroup: null,
-    desc: "An introduction to mental health for whole teams. Reduces stigma and starts conversations.",
+    maxGroup: "Up to 16",
+    desc: "A nationally recognised qualification for anyone becoming a Mental Health First Aider within their workplace.",
   },
   {
     href: "/courses/youth-mental-health",
-    badge: null,
-    title: "Youth Mental Health First Aid",
+    badge: "Level 2 · Specialist",
+    title: "First Aid for Youth Mental Health",
     duration: "1 Day",
     format: "In person",
+    maxGroup: "Up to 16",
+    desc: "Specialist training focused on the mental health of children and young people aged 8–18.",
+  },
+  {
+    href: "/courses/mhfa-awareness",
+    badge: "Level 1",
+    title: "Awareness of First Aid for Mental Health",
+    duration: "4 Hours",
+    format: "In person",
     maxGroup: null,
-    desc: "Specialist training focused on young people aged 8–18. For those working with or caring for young people.",
+    desc: "An introductory half-day awareness session, suitable for all staff. No prior knowledge required.",
   },
   {
     href: "/courses/refresher",
-    badge: null,
-    title: "Annual Refresher",
-    duration: "Half Day",
+    badge: "Renewal",
+    title: "First Aid for Mental Health Annual Refresher",
+    duration: "3 Hours",
     format: "In person",
-    maxGroup: null,
-    desc: "For certified first aiders renewing their qualification. Refreshes skills and updates knowledge.",
+    maxGroup: "Up to 16",
+    desc: "For certified first aiders maintaining their skills and renewing their qualification.",
   },
 ];
 
 const finder = [
-  { scenario: '"My whole team needs awareness."', label: "Mental Health First Aid Awareness", href: "/courses/mhfa-awareness" },
-  { scenario: '"I want certified first aiders."', label: "First Aid for Mental Health (2-day)", href: "/courses/mhfa" },
-  { scenario: '"I need training for supervisors."', label: "Supervising First Aid for Mental Health", href: "/courses/mhfa-supervising" },
+  { scenario: '"My whole team needs awareness."', label: "Awareness of First Aid for Mental Health (Level 1)", href: "/courses/mhfa-awareness" },
+  { scenario: '"I want to certify first aiders."', label: "First Aid for Mental Health (Level 2)", href: "/courses/mhfa" },
+  { scenario: '"I need our senior leads qualified."', label: "Supervising First Aid for Mental Health (Level 3)", href: "/courses/mhfa-supervising" },
   { scenario: '"My first aiders are due to renew."', label: "Annual Refresher", href: "/courses/refresher" },
 ];
 
 const comparison = [
-  { title: "First Aid for Mental Health", duration: "2 days", who: "Designated first aiders", certified: "Yes · 3yr", href: "/courses/mhfa" },
-  { title: "Supervising First Aid for Mental Health", duration: "2 days", who: "Supervisors of first aiders", certified: "Yes · 3yr", href: "/courses/mhfa-supervising" },
-  { title: "Mental Health First Aid Awareness", duration: "4 hrs", who: "All staff", certified: "Attendance", href: "/courses/mhfa-awareness" },
-  { title: "Youth Mental Health First Aid", duration: "1 day", who: "Those working with young people", certified: "Attendance", href: "/courses/youth-mental-health" },
-  { title: "Annual Refresher", duration: "Half day", who: "Existing certified first aiders", certified: "Re-cert · 3yr", href: "/courses/refresher" },
+  { title: "Supervising First Aid for Mental Health", duration: "2 days", who: "Senior leads & supervisors", certified: "Yes · 3yr", href: "/courses/mhfa-supervising" },
+  { title: "First Aid for Mental Health", duration: "1 day", who: "Designated first aiders", certified: "Yes · 3yr", href: "/courses/mhfa" },
+  { title: "First Aid for Youth Mental Health", duration: "1 day", who: "Those working with young people", certified: "Yes · 3yr", href: "/courses/youth-mental-health" },
+  { title: "Awareness of First Aid for Mental Health", duration: "4 hrs", who: "All staff", certified: "Yes · 3yr", href: "/courses/mhfa-awareness" },
+  { title: "Annual Refresher", duration: "3 hrs", who: "Existing certified first aiders", certified: "Re-cert · 3yr", href: "/courses/refresher" },
 ];
 
 export default function Courses() {
@@ -74,7 +74,7 @@ export default function Courses() {
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Courses</h1>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Five FAA accredited courses, from a four-hour awareness session through to the full two-day qualification. All delivered in person by David, in your workplace or a venue of your choice.
+            Five FAA Ofqual-regulated mental health first aid qualifications, from a four-hour awareness session through to the comprehensive two-day Level 3 award. All delivered in person by David, at your workplace or a venue of your choice.
           </p>
         </div>
       </section>
@@ -165,6 +165,9 @@ export default function Courses() {
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-gray-500 mt-4">
+            All qualifications are FAA Ofqual-regulated. <Link href="/pricing" className="text-blue-700 hover:underline">View pricing →</Link>
+          </p>
         </div>
       </section>
 
@@ -175,9 +178,9 @@ export default function Courses() {
             [David]
           </div>
           <div className="flex-1">
-            <h2 className="font-bold text-gray-900 mb-1">All courses are taught by David</h2>
+            <h2 className="font-bold text-gray-900 mb-1">All courses are taught by David Scott</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
-              An NHS mental health nurse, not just a trainer. Decades of clinical experience in the room with you.
+              A Registered Mental Health Nurse with over 25 years of NHS clinical experience. Not just a trainer — someone who has spent decades on the frontline of mental health care, bringing real clinical depth into every training room.
             </p>
           </div>
           <Link href="/about" className="shrink-0 text-blue-700 font-medium text-sm hover:underline whitespace-nowrap">
@@ -191,7 +194,7 @@ export default function Courses() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="font-semibold text-gray-900">Still not sure which course you need?</p>
-            <p className="text-gray-500 text-sm">Tell us a bit about your team and we&apos;ll recommend the right one. No obligation.</p>
+            <p className="text-gray-500 text-sm">Tell us a bit about your organisation and we&apos;ll recommend the right one. No obligation.</p>
           </div>
           <Link
             href="/contact"

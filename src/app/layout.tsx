@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "David Scott | Mental Health First Aid Training",
-  description: "FAA accredited mental health first aid training delivered by a registered NHS mental health nurse. Covering Merseyside and beyond.",
+  title: "Positive Cultures | Mental Health First Aid Training",
+  description: "FAA accredited mental health first aid training and consultancy, delivered by David Scott — a Registered Mental Health Nurse with over 25 years of NHS clinical experience.",
 };
 
 export default function RootLayout({

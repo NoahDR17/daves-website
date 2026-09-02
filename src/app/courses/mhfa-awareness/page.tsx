@@ -2,74 +2,74 @@ import CoursePageTemplate, { CourseData } from "@/components/CoursePageTemplate"
 
 const course: CourseData = {
   slug: "mhfa-awareness",
-  eyebrow: "FAA Accredited · Half-day awareness",
-  title: "Mental Health First Aid Awareness",
+  eyebrow: "FAA Level 1 Award · Half Day",
+  title: "Awareness of First Aid for Mental Health",
   description:
-    "An introduction to mental health for whole teams. Reduces stigma, opens conversations, and gives every attendee a foundation for supporting those around them.",
+    "An introductory qualification that provides a practical overview of mental health and mental wellbeing. Designed for all staff, it helps people recognise possible mental health concerns and develop confidence in initiating supportive conversations.",
   length: "4 hours",
   groupSize: null,
   format: "In person",
   certified: "Attendance certificate",
   learnItems: [
     {
-      title: "Understand what mental health is",
-      desc: "Learn what we mean by mental health, how it exists on a spectrum, and why the workplace matters.",
+      title: "Understand mental health and wellbeing",
+      desc: "Learn what mental health is, how it exists on a spectrum, and why awareness in the workplace matters for everyone.",
     },
     {
-      title: "Recognise the signs",
-      desc: "Spot when a colleague may be struggling and understand what common mental health conditions can look like day-to-day.",
+      title: "Recognise signs of mental ill health",
+      desc: "Develop awareness of the possible signs that someone may be experiencing a mental health difficulty, without making assumptions.",
     },
     {
-      title: "Start a conversation",
-      desc: "Feel confident enough to check in with someone, without worrying about saying the wrong thing.",
+      title: "Start a supportive conversation",
+      desc: "Build confidence to check in with a colleague sensitively and appropriately, using the First Aid for Mental Health action plan as a guide.",
     },
     {
-      title: "Know where to point people",
-      desc: "Understand what support is available — internally and through the NHS — so you can signpost effectively.",
+      title: "Signpost to professional help",
+      desc: "Understand the range of support available and how to encourage someone to access it.",
     },
   ],
   structure: [
     {
-      label: "Morning",
+      label: "First half",
       title: "Mental health fundamentals",
-      desc: "What mental health is, the spectrum of wellbeing, common conditions, and the impact of stigma in the workplace.",
+      desc: "What First Aid for Mental Health is, understanding mental health and wellbeing, recognising signs of mental ill health, and common conditions.",
     },
     {
-      label: "Afternoon",
-      title: "Spotting signs and starting conversations",
-      desc: "Recognising when someone is struggling, how to approach them, and what to do next.",
+      label: "Second half",
+      title: "Starting conversations and signposting",
+      desc: "The First Aid for Mental Health action plan, having supportive conversations, and signposting individuals to appropriate professional help.",
     },
   ],
   whoItIsFor:
-    "All staff at any level. This course works well as a whole-organisation awareness session, or as a first step for teams before designating qualified first aiders. No prior knowledge required.",
+    "This course is ideal for all employees and community members who want a greater understanding of mental health. No prior knowledge is required. It works particularly well as a whole-organisation awareness session or as a starting point before designating qualified first aiders.",
   included: [
-    "Course workbook",
-    "Attendance certificate",
+    "Learner workbook",
+    "FAA Level 1 attendance certificate",
     "Pre-course briefing",
     "Post-course summary for your records",
   ],
   faqs: [
     {
       q: "Is there a maximum group size?",
-      a: "There's flexibility for larger groups on this course. Get in touch with your numbers and David will advise on the best format.",
+      a: "Standard group pricing covers up to 16 delegates. For larger groups, contact us and David will advise on the best format.",
     },
     {
-      q: "Where does the course take place?",
-      a: "At your workplace or a venue of your choice. David will confirm what's needed for the room ahead of the session.",
-    },
-    {
-      q: "Is this the same as the full two-day course?",
-      a: "No — this is an awareness session rather than a certification course. It's ideal for whole-team education. For qualified first aiders, see the First Aid for Mental Health course.",
+      q: "Is this the same as the full one-day or two-day course?",
+      a: "No. This is an awareness-level introduction rather than a certification course. For qualified Mental Health First Aiders, see the Level 2 First Aid for Mental Health course.",
     },
     {
       q: "What does it cost?",
-      a: "Quoted per session. Get in touch and David will come back with an all-in quote within two working days.",
+      a: "Up to 12 delegates: £695. 13–16 delegates: £795. Individual places on open courses are available at £95 per person. Contact us for a quote.",
+    },
+    {
+      q: "Where does the course take place?",
+      a: "At your workplace or a venue of your choice. David will confirm what is needed ahead of the session.",
     },
   ],
-  ctaTitle: "Ready to raise awareness across your team?",
+  ctaTitle: "Ready to raise mental health awareness across your organisation?",
   related: [
-    { href: "/courses/mhfa", label: "Flagship course", title: "First Aid for Mental Health" },
-    { href: "/courses/mhfa-supervising", label: "For supervisors", title: "Supervising First Aid for Mental Health" },
+    { href: "/courses/mhfa", label: "Next step", title: "First Aid for Mental Health (Level 2)" },
+    { href: "/courses/mhfa-supervising", label: "Senior qualification", title: "Supervising First Aid for Mental Health" },
     { href: "/courses/youth-mental-health", label: "Working with young people?", title: "Youth Mental Health First Aid" },
   ],
 };
