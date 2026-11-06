@@ -60,25 +60,46 @@ export default function Home() {
 
       {/* ABOUT POSITIVE CULTURES */}
       <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">About Positive Cultures</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Positive Cultures is a specialist mental health training and consultancy company founded by David Scott, a highly experienced Mental Health Nurse with over 25 years of clinical practice across mental health liaison and crisis services, low secure services, community mental health, and acute and complex care.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Drawing on extensive frontline experience, Positive Cultures delivers practical, engaging and evidence-based mental health training that helps organisations create safer, healthier and more supportive workplaces. As a trained instructor through NUCO Training, David delivers FAA Ofqual-regulated qualifications — providing nationally recognised training that develops confidence, knowledge and practical skills.
-            </p>
-            <p className="text-gray-600 leading-relaxed italic">
-              &ldquo;Creating workplaces where people feel heard, supported and able to thrive.&rdquo;
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Positive Cultures</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Positive Cultures is a specialist mental health training and consultancy company founded by David Scott, a highly experienced Mental Health Nurse with over 25 years of clinical practice across mental health liaison and crisis services, low secure services, community mental health, and acute and complex care.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Drawing on extensive frontline experience, Positive Cultures delivers practical, engaging and evidence-based mental health training that helps organisations create safer, healthier and more supportive workplaces. As a trained instructor through NUCO Training, David delivers FAA Ofqual-regulated qualifications — providing nationally recognised training that develops confidence, knowledge and practical skills.
+              </p>
+              <p className="text-gray-600 leading-relaxed italic">
+                &ldquo;Creating workplaces where people feel heard, supported and able to thrive.&rdquo;
+              </p>
+            </div>
+            <div className="flex flex-col gap-6">
+              <div className="bg-blue-700 text-white rounded-lg p-10 text-center">
+                <p className="text-6xl font-bold mb-2">1 in 4</p>
+                <p className="text-blue-100">UK employees experience a mental health issue each year</p>
+              </div>
+              <div className="bg-blue-700 text-white rounded-lg p-10 text-center">
+                <p className="text-6xl font-bold mb-2">22.9</p>
+                <p className="text-xl font-semibold mb-2">Workdays lost</p>
+                <p className="text-blue-100">On average per case of work-related stress, anxiety and depression, this has increased year on year since 1990. </p>
+                <p className="text-sm text-blue-100 mt-3">Source: HSE, 2026</p>
+              </div>
+              </div>
           </div>
-          <div className="bg-blue-700 text-white rounded-lg p-10 text-center">
-            <p className="text-6xl font-bold mb-2">1 in 4</p>
-            <p className="text-blue-100">UK employees experience a mental health issue each year</p>
-            <div className="border-t border-blue-600 mt-6 pt-6">
-              <p className="text-3xl font-bold mb-1">£5.90</p>
-              <p className="text-blue-100 text-sm">average return for every £1 invested in workplace mental health support</p>
+
+          {/* RETURN ON INVESTMENT */}
+          <div className="mt-12 bg-blue-50 border border-blue-100 rounded-lg p-8 md:p-10 grid md:grid-cols-3 gap-8 items-center">
+            <div className="text-center md:text-left md:border-r md:border-blue-200 md:pr-8">
+              <p className="text-5xl font-bold text-blue-700 mb-1">£5.30</p>
+              <p className="text-gray-700 font-medium">average return for every £1 invested</p>
+            </div>
+            <div className="md:col-span-2">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Return on Investment</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Investing in Mental Health First Aid training protects our people&apos;s well-being before distress escalates into burnout, turning an invisible annual drain of up to £2,300 per employee into a high-performing workplace culture. By building a psychologically safe environment, we reduce the disruptive friction of staff turnover and secure an average £5.30 return for every £1 we invest in our team&apos;s mental health resilience.
+              </p>
+              <p className="text-sm text-gray-500 mt-3">Source: Deloitte, 2024</p>
             </div>
           </div>
         </div>
@@ -96,7 +117,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "Clinical depth", desc: "Answers grounded in real assessment and 25 years of frontline NHS mental health experience — not just a manual." },
-              { title: "Real NHS experience", desc: "Stories and scenarios from two decades across crisis teams, liaison, acute wards, low secure services, and community care." },
+              { title: "Real NHS experience", desc: "Dave draws on his extensive clinical experience to bring the training to life whilst maintaining confidentiality and discussing individual experiences in a sensitive and compassionate way." },
               { title: "Accurate signposting", desc: "David knows exactly how NHS mental health pathways work — so your team gets signposting that is actually useful." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">

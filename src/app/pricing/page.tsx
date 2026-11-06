@@ -84,7 +84,7 @@ export default function Pricing() {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Pricing</h1>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Transparent, all-inclusive pricing for group and individual bookings. All courses are delivered on-site at your organisation, making group training a cost-effective solution for teams of any size.
+            Transparent pricing for group and individual bookings which is highly competitive for the sector. Courses can be delivered on-site at your organisation, making group training a cost-effective solution for teams of any size. Off site bookings costs will be added to costings shown below.
           </p>
         </div>
       </section>
