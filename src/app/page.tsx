@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const courses = [
@@ -22,32 +23,40 @@ export default function Home() {
       <section className="bg-white py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-blue-700 text-sm font-semibold uppercase tracking-wide mb-3">
+            <p className="text-brand-teal text-sm font-semibold uppercase tracking-wide mb-3">
               FAA Ofqual-Regulated Training
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-ink leading-tight mb-4">
               Mental Health First Aid training, delivered by an NHS mental health nurse.
             </h1>
             <p className="text-lg text-gray-600 mb-8">
               Accredited courses taught with the depth that only 25 years of clinical experience can bring.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="bg-blue-700 text-white font-medium px-6 py-3 rounded hover:bg-blue-800 transition-colors">
+              <Link href="/contact" className="bg-brand-sunrise text-brand-teal-deep font-medium px-6 py-3 rounded hover:bg-brand-sunrise-light transition-colors">
                 Enquire about training
               </Link>
-              <Link href="/courses" className="border border-gray-300 text-gray-700 font-medium px-6 py-3 rounded hover:bg-gray-50 transition-colors">
+              <Link href="/courses" className="border border-gray-300 text-gray-700 font-medium px-6 py-3 rounded hover:bg-brand-mist transition-colors">
                 View courses
               </Link>
             </div>
           </div>
-          <div className="bg-gray-100 rounded-lg aspect-[4/3] flex items-center justify-center text-gray-400 text-sm">
-            [Photo of David]
+          {/* TODO: swap for a photo of David when available */}
+          <div className="bg-brand-mist rounded-lg aspect-[4/3] flex items-center justify-center p-8">
+            <Image
+              src="/logo-transparent.png"
+              alt="Positive Cultures Training and Consultancy"
+              width={550}
+              height={470}
+              loading="eager"
+              className="w-full max-w-sm h-auto"
+            />
           </div>
         </div>
       </section>
 
       {/* TRUST STRIP */}
-      <section className="bg-gray-50 border-y border-gray-200 py-5 px-4">
+      <section className="bg-brand-mist border-y border-gray-200 py-5 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-600">
           <span>✓ FAA Ofqual-Regulated Instructor</span>
           <span>✓ Registered Mental Health Nurse (RMN)</span>
@@ -63,7 +72,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Positive Cultures</h2>
+              <h2 className="text-3xl font-bold text-brand-ink mb-4">About Positive Cultures</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Positive Cultures is a specialist mental health training and consultancy company founded by David Scott, a highly experienced Mental Health Nurse with over 25 years of clinical practice across mental health liaison and crisis services, low secure services, community mental health, and acute and complex care.
               </p>
@@ -75,41 +84,41 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-6">
-              <div className="bg-blue-700 text-white rounded-lg p-10 text-center">
+              <div className="bg-brand-teal-deep text-white rounded-lg p-10 text-center">
                 <p className="text-6xl font-bold mb-2">1 in 4</p>
-                <p className="text-blue-100">UK employees experience a mental health issue each year</p>
+                <p className="text-brand-mist">UK employees experience a mental health issue each year</p>
               </div>
-              <div className="bg-blue-700 text-white rounded-lg p-10 text-center">
+              <div className="bg-brand-teal-deep text-white rounded-lg p-10 text-center">
                 <p className="text-6xl font-bold mb-2">22.9</p>
                 <p className="text-xl font-semibold mb-2">Workdays lost</p>
-                <p className="text-blue-100">On average per case of work-related stress, anxiety and depression, this has increased year on year since 1990. </p>
-                <p className="text-sm text-blue-100 mt-3">Source: HSE, 2026</p>
+                <p className="text-brand-mist">On average per case of work-related stress, anxiety and depression, this has increased year on year since 1990. </p>
+                <p className="text-sm text-brand-mist mt-3">Source: HSE, 2026</p>
               </div>
               </div>
           </div>
 
           {/* RETURN ON INVESTMENT */}
-          <div className="mt-12 bg-blue-50 border border-blue-100 rounded-lg p-8 md:p-10 grid md:grid-cols-3 gap-8 items-center">
-            <div className="text-center md:text-left md:border-r md:border-blue-200 md:pr-8">
-              <p className="text-5xl font-bold text-blue-700 mb-1">£5.30</p>
+          <div className="mt-12 bg-brand-mist border border-brand-sage rounded-lg p-8 md:p-10 grid md:grid-cols-3 gap-8 items-center">
+            <div className="text-center md:text-left md:border-r md:border-brand-sage md:pr-8">
+              <p className="text-5xl font-bold text-brand-teal mb-1">£5.30</p>
               <p className="text-gray-700 font-medium">average return for every £1 invested</p>
             </div>
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Return on Investment</h3>
+              <h3 className="text-2xl font-bold text-brand-ink mb-3">Return on Investment</h3>
               <p className="text-gray-600 leading-relaxed">
                 Investing in Mental Health First Aid training protects our people&apos;s well-being before distress escalates into burnout, turning an invisible annual drain of up to £2,300 per employee into a high-performing workplace culture. By building a psychologically safe environment, we reduce the disruptive friction of staff turnover and secure an average £5.30 return for every £1 we invest in our team&apos;s mental health resilience.
               </p>
-              <p className="text-sm text-gray-500 mt-3">Source: Deloitte, 2024</p>
+              <p className="text-sm text-gray-600 mt-3">Source: Deloitte, 2024</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* WHY TRAIN WITH DAVID */}
-      <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-brand-mist py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why train with Positive Cultures?</h2>
+            <h2 className="text-3xl font-bold text-brand-ink mb-4">Why train with Positive Cultures?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Most mental health first aid trainers took a short course to learn to teach. David brings over 25 years of clinical NHS practice into every room.
             </p>
@@ -121,7 +130,7 @@ export default function Home() {
               { title: "Accurate signposting", desc: "David knows exactly how NHS mental health pathways work — so your team gets signposting that is actually useful." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <h3 className="font-bold text-brand-ink mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -133,7 +142,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Courses</h2>
+            <h2 className="text-3xl font-bold text-brand-ink mb-4">Courses</h2>
             <p className="text-gray-600">FAA Ofqual-regulated qualifications for organisations of all sizes, delivered in person by David.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -141,24 +150,24 @@ export default function Home() {
               <Link
                 key={course.href}
                 href={course.href}
-                className="group border border-gray-200 rounded-lg p-6 hover:border-blue-700 hover:shadow-md transition-all"
+                className="group border border-gray-200 rounded-lg p-6 hover:border-brand-teal hover:shadow-md transition-all"
               >
-                <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">{course.duration}</span>
-                <h3 className="font-bold text-gray-900 mt-1 mb-2 group-hover:text-blue-700 transition-colors">{course.title}</h3>
-                <p className="text-gray-500 text-sm">{course.desc}</p>
+                <span className="text-xs font-semibold text-brand-teal uppercase tracking-wide">{course.duration}</span>
+                <h3 className="font-bold text-brand-ink mt-1 mb-2 group-hover:text-brand-teal transition-colors">{course.title}</h3>
+                <p className="text-gray-600 text-sm">{course.desc}</p>
               </Link>
             ))}
             <Link
               href="/bespoke-training"
-              className="group border border-blue-200 bg-blue-50 rounded-lg p-6 hover:border-blue-700 hover:shadow-md transition-all"
+              className="group border border-brand-sage bg-brand-mist rounded-lg p-6 hover:border-brand-teal hover:shadow-md transition-all"
             >
-              <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">Online or face to face</span>
-              <h3 className="font-bold text-gray-900 mt-1 mb-2 group-hover:text-blue-700 transition-colors">Bespoke Mental Health Training</h3>
-              <p className="text-gray-500 text-sm">Tailored packages including gambling harm awareness and team building day facilitation.</p>
+              <span className="text-xs font-semibold text-brand-teal uppercase tracking-wide">Online or face to face</span>
+              <h3 className="font-bold text-brand-ink mt-1 mb-2 group-hover:text-brand-teal transition-colors">Bespoke Mental Health Training</h3>
+              <p className="text-gray-600 text-sm">Tailored packages including gambling harm awareness and team building day facilitation.</p>
             </Link>
           </div>
           <div className="text-center mt-8">
-            <Link href="/courses" className="text-blue-700 font-medium hover:underline">
+            <Link href="/courses" className="text-brand-teal font-medium hover:underline">
               View all courses →
             </Link>
           </div>
@@ -166,20 +175,20 @@ export default function Home() {
       </section>
 
       {/* MEET DAVID */}
-      <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-brand-mist py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-gray-200 rounded-lg aspect-square max-w-sm mx-auto flex items-center justify-center text-gray-400 text-sm w-full">
             [Portrait of David]
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet David Scott</h2>
+            <h2 className="text-3xl font-bold text-brand-ink mb-4">Meet David Scott</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               David Scott is a Registered Mental Health Nurse (RMN) with over 25 years of NHS clinical experience. He has worked across mental health liaison and crisis services, low secure services, community mental health teams, and acute and complex care across Merseyside and Lancashire.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
               Now an FAA accredited instructor, David brings that clinical depth into every training room — giving your team answers that go beyond what any manual can offer.
             </p>
-            <Link href="/about" className="text-blue-700 font-medium hover:underline">
+            <Link href="/about" className="text-brand-teal font-medium hover:underline">
               Read David&apos;s full story →
             </Link>
           </div>
@@ -189,15 +198,15 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">How it works</h2>
+          <h2 className="text-3xl font-bold text-brand-ink text-center mb-12">How it works</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((s) => (
               <div key={s.step} className="text-center">
-                <div className="w-12 h-12 rounded-full bg-blue-700 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 rounded-full bg-brand-teal-deep text-white font-bold text-lg flex items-center justify-center mx-auto mb-4">
                   {s.step}
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm">{s.desc}</p>
+                <h3 className="font-bold text-brand-ink mb-2">{s.title}</h3>
+                <p className="text-gray-600 text-sm">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -205,9 +214,9 @@ export default function Home() {
       </section>
 
       {/* PROFESSIONAL STANDARDS */}
-      <section className="bg-gray-50 py-16 px-4">
+      <section className="bg-brand-mist py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Professional standards and assurance</h2>
+          <h2 className="text-2xl font-bold text-brand-ink mb-4">Professional standards and assurance</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
             When you work with Positive Cultures, you can be confident that training is delivered by an experienced healthcare professional committed to safeguarding, confidentiality, professionalism and best practice.
           </p>
@@ -225,8 +234,8 @@ export default function Home() {
       <section className="py-10 px-4">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <p className="font-semibold text-gray-900">Booking for yourself, not a team?</p>
-            <p className="text-gray-500 text-sm">Positive Cultures primarily delivers in-house training but individual places may be available. Get in touch.</p>
+            <p className="font-semibold text-brand-ink">Booking for yourself, not a team?</p>
+            <p className="text-gray-600 text-sm">Positive Cultures primarily delivers in-house training but individual places may be available. Get in touch.</p>
           </div>
           <Link href="/contact" className="shrink-0 border border-gray-300 text-gray-700 font-medium px-5 py-2.5 rounded hover:bg-gray-100 transition-colors text-sm">
             Get in touch
@@ -235,10 +244,10 @@ export default function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="bg-gray-900 py-20 px-4 text-center">
+      <section className="bg-brand-teal-deep py-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-3">Ready to bring mental health first aid training to your team?</h2>
-        <p className="text-gray-400 mb-8">No pressure, no obligation. Get in touch and David will respond within two working days.</p>
-        <Link href="/contact" className="bg-white text-gray-900 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors">
+        <p className="text-brand-mist mb-8">No pressure, no obligation. Get in touch and David will respond within two working days.</p>
+        <Link href="/contact" className="bg-brand-sunrise text-brand-teal-deep font-semibold px-8 py-3 rounded hover:bg-brand-sunrise-light transition-colors">
           Enquire about training
         </Link>
       </section>

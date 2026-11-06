@@ -1,8 +1,21 @@
 @import "tailwindcss";
 
+/* Positive Cultures brand palette (Option A: teal and sunrise).
+   Change a colour here and it updates across the whole site. */
+@theme {
+  --color-brand-teal-deep: #1F4E5A;      /* panels, call-to-action bands, text on buttons */
+  --color-brand-teal: #276B68;           /* links, hovers, focus rings */
+  --color-brand-sunrise: #F2B84B;        /* primary buttons (use deep teal text, never white) */
+  --color-brand-sunrise-light: #F6C870;  /* primary button hover */
+  --color-brand-sage: #8FB8A8;           /* borders and decoration only, not text */
+  --color-brand-mist: #E3EFEC;           /* alternate section backgrounds, text on teal panels */
+  --color-brand-cream: #FAF7F2;          /* page background */
+  --color-brand-ink: #2B2D2F;            /* body text, headings, footer */
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-brand-cream);
+  --foreground: var(--color-brand-ink);
 }
 
 body {
@@ -10,3 +23,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+

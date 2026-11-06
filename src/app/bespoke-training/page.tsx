@@ -34,20 +34,20 @@ export default function BespokeTraining() {
       {/* HERO */}
       <section className="bg-white py-20 px-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <p className="text-blue-700 text-sm font-semibold uppercase tracking-wide mb-3">
+          <p className="text-brand-teal text-sm font-semibold uppercase tracking-wide mb-3">
             Tailored to your organisation
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6 max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-ink leading-tight mb-6 max-w-3xl">
             Bespoke Mental Health Training
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mb-8">
             In addition to FAA Ofqual regulated Mental Health First Aid training, David can also offer bespoke mental health training packages tailored to the needs of your staff.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/contact" className="bg-blue-700 text-white font-medium px-6 py-3 rounded hover:bg-blue-800 transition-colors">
+            <Link href="/contact" className="bg-brand-sunrise text-brand-teal-deep font-medium px-6 py-3 rounded hover:bg-brand-sunrise-light transition-colors">
               Discuss your needs
             </Link>
-            <Link href="/courses" className="border border-gray-300 text-gray-700 font-medium px-6 py-3 rounded hover:bg-gray-50 transition-colors">
+            <Link href="/courses" className="border border-gray-300 text-gray-700 font-medium px-6 py-3 rounded hover:bg-brand-mist transition-colors">
               View accredited courses
             </Link>
           </div>
@@ -58,7 +58,7 @@ export default function BespokeTraining() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Bespoke training includes</h2>
+            <h2 className="text-3xl font-bold text-brand-ink mb-4">Bespoke training includes</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Every package is shaped around your team. Topics can be delivered on their own or combined.
             </p>
@@ -67,12 +67,12 @@ export default function BespokeTraining() {
             {offerings.map((item, i) => (
               <div
                 key={item}
-                className="border border-gray-200 rounded-lg p-6 flex items-start gap-4 hover:border-blue-700 hover:shadow-md transition-all"
+                className="border border-gray-200 rounded-lg p-6 flex items-start gap-4 hover:border-brand-teal hover:shadow-md transition-all"
               >
-                <span className="shrink-0 w-10 h-10 rounded-full bg-blue-50 text-blue-700 font-bold text-sm flex items-center justify-center">
+                <span className="shrink-0 w-10 h-10 rounded-full bg-brand-mist text-brand-teal font-bold text-sm flex items-center justify-center">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="font-bold text-gray-900 leading-snug pt-2">{item}</h3>
+                <h3 className="font-bold text-brand-ink leading-snug pt-2">{item}</h3>
               </div>
             ))}
           </div>
@@ -80,19 +80,19 @@ export default function BespokeTraining() {
       </section>
 
       {/* DELIVERY */}
-      <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-brand-mist py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Delivered the way that suits you</h2>
+            <h2 className="text-3xl font-bold text-brand-ink mb-4">Delivered the way that suits you</h2>
             <p className="text-gray-600 leading-relaxed">
               These sessions can be delivered online or face to face depending on your workforce structure.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {delivery.map((d) => (
-              <div key={d.title} className="bg-blue-700 text-white rounded-lg p-8">
+              <div key={d.title} className="bg-brand-teal-deep text-white rounded-lg p-8">
                 <p className="text-2xl font-bold mb-2">{d.title}</p>
-                <p className="text-blue-100 text-sm">{d.desc}</p>
+                <p className="text-brand-mist text-sm">{d.desc}</p>
               </div>
             ))}
           </div>
@@ -102,15 +102,15 @@ export default function BespokeTraining() {
       {/* HOW IT WORKS */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">How it works</h2>
+          <h2 className="text-3xl font-bold text-brand-ink text-center mb-12">How it works</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((s) => (
               <div key={s.step} className="text-center">
-                <div className="w-12 h-12 rounded-full bg-blue-700 text-white font-bold text-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 rounded-full bg-brand-teal-deep text-white font-bold text-lg flex items-center justify-center mx-auto mb-4">
                   {s.step}
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm">{s.desc}</p>
+                <h3 className="font-bold text-brand-ink mb-2">{s.title}</h3>
+                <p className="text-gray-600 text-sm">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -118,12 +118,12 @@ export default function BespokeTraining() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gray-900 py-20 px-4 text-center">
+      <section className="bg-brand-teal-deep py-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-3">Looking for something tailored to your team?</h2>
-        <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
+        <p className="text-brand-mist mb-8 max-w-2xl mx-auto">
           Get in touch to discuss your needs and consider solutions to your mental health training needs.
         </p>
-        <Link href="/contact" className="bg-white text-gray-900 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors">
+        <Link href="/contact" className="bg-brand-sunrise text-brand-teal-deep font-semibold px-8 py-3 rounded hover:bg-brand-sunrise-light transition-colors">
           Get in touch
         </Link>
       </section>

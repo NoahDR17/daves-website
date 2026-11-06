@@ -69,7 +69,7 @@ function EnquireButton({ label = "Enquire for a quote" }: { label?: string }) {
   return (
     <Link
       href="/contact"
-      className="inline-block bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-blue-800 transition-colors whitespace-nowrap"
+      className="inline-block bg-brand-sunrise text-brand-teal-deep text-sm font-semibold px-5 py-2.5 rounded hover:bg-brand-sunrise-light transition-colors whitespace-nowrap"
     >
       {label}
     </Link>
@@ -82,7 +82,7 @@ export default function Pricing() {
       {/* HERO */}
       <section className="bg-white py-16 px-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Pricing</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-ink mb-4">Pricing</h1>
           <p className="text-lg text-gray-600 max-w-2xl mb-8">
             Pricing is transparent and tailored to your needs. Every organisation is different, so rather than a fixed price list, we provide a clear, itemised quotation based on the accredited courses or bespoke training you need, your group size and location, with no hidden costs.
           </p>
@@ -91,12 +91,12 @@ export default function Pricing() {
       </section>
 
       {/* WHAT'S INCLUDED */}
-      <section className="bg-blue-700 py-12 px-4">
+      <section className="bg-brand-teal-deep py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-white font-bold text-lg mb-4">All course fees include</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {included.map((item) => (
-              <div key={item} className="flex items-start gap-2 text-blue-100 text-sm">
+              <div key={item} className="flex items-start gap-2 text-brand-mist text-sm">
                 <span className="text-white font-bold mt-0.5 shrink-0">✓</span>
                 {item}
               </div>
@@ -109,18 +109,18 @@ export default function Pricing() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">How your quote is worked out</h2>
+            <h2 className="text-3xl font-bold text-brand-ink mb-4">How your quote is worked out</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
               Tell us a little about your organisation and what you are looking for, and David will come back to you with a clear quotation. Group training is priced per session, not per head, making it a cost-effective way to train your whole team.
             </p>
             <EnquireButton />
           </div>
           <div className="border border-gray-200 rounded-lg p-6">
-            <h3 className="font-bold text-gray-900 mb-4">Your quote takes into account</h3>
+            <h3 className="font-bold text-brand-ink mb-4">Your quote takes into account</h3>
             <ul className="space-y-3">
               {quoteFactors.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-gray-600 text-sm">
-                  <span className="text-blue-700 font-bold mt-0.5 shrink-0">✓</span>
+                  <span className="text-brand-teal font-bold mt-0.5 shrink-0">✓</span>
                   {item}
                 </li>
               ))}
@@ -130,9 +130,9 @@ export default function Pricing() {
       </section>
 
       {/* GROUP COURSES */}
-      <section className="bg-gray-50 py-16 px-4">
+      <section className="bg-brand-mist py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Group training</h2>
+          <h2 className="text-3xl font-bold text-brand-ink mb-2">Group training</h2>
           <p className="text-gray-600 mb-10">Delivered at your premises for groups of up to 16 delegates. Enquire about any course for a tailored quote.</p>
           <div className="space-y-6">
             {groupCourses.map((course) => (
@@ -140,13 +140,13 @@ export default function Pricing() {
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xs font-semibold bg-blue-700 text-white px-2 py-0.5 rounded">{course.level}</span>
+                      <span className="text-xs font-semibold bg-brand-teal-deep text-white px-2 py-0.5 rounded">{course.level}</span>
                       <span className="text-xs text-gray-400">{course.duration}</span>
                     </div>
-                    <h3 className="font-bold text-gray-900 mb-1">
-                      <Link href={course.href} className="hover:text-blue-700 transition-colors">{course.title}</Link>
+                    <h3 className="font-bold text-brand-ink mb-1">
+                      <Link href={course.href} className="hover:text-brand-teal transition-colors">{course.title}</Link>
                     </h3>
-                    <p className="text-gray-500 text-sm">{course.desc}</p>
+                    <p className="text-gray-600 text-sm">{course.desc}</p>
                   </div>
                   <div className="shrink-0">
                     <EnquireButton label="Enquire about pricing" />
@@ -161,14 +161,14 @@ export default function Pricing() {
       {/* BESPOKE TRAINING */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="border border-blue-200 bg-blue-50 rounded-lg p-8 grid md:grid-cols-3 gap-8 items-center">
+          <div className="border border-brand-sage bg-brand-mist rounded-lg p-8 grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-2">
-              <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">Online or face to face</span>
-              <h2 className="text-3xl font-bold text-gray-900 mt-1 mb-3">Bespoke mental health training</h2>
+              <span className="text-xs font-semibold text-brand-teal uppercase tracking-wide">Online or face to face</span>
+              <h2 className="text-3xl font-bold text-brand-ink mt-1 mb-3">Bespoke mental health training</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Alongside our accredited courses, David designs bespoke mental health training packages around the needs of your staff, including gambling harm, anxiety and stress management, team building day facilitation, management training on workplace mental health culture, and staff supervision. Every package is quoted individually.
               </p>
-              <Link href="/bespoke-training" className="text-blue-700 font-medium text-sm hover:underline">
+              <Link href="/bespoke-training" className="text-brand-teal font-medium text-sm hover:underline">
                 Find out more about bespoke training →
               </Link>
             </div>
@@ -180,40 +180,40 @@ export default function Pricing() {
       </section>
 
       {/* OPEN COURSES */}
-      <section className="bg-gray-50 py-16 px-4">
+      <section className="bg-brand-mist py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Individual bookings</h2>
+          <h2 className="text-3xl font-bold text-brand-ink mb-2">Individual bookings</h2>
           <p className="text-gray-600 mb-8">Where available, individual places may be booked on scheduled open courses.</p>
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <ul className="divide-y divide-gray-100">
               {openCourses.map((title) => (
                 <li key={title} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 p-4 text-sm">
                   <span className="text-gray-700">{title}</span>
-                  <Link href="/contact" className="text-blue-700 font-medium hover:underline">
+                  <Link href="/contact" className="text-brand-teal font-medium hover:underline">
                     Enquire about a place →
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <p className="text-sm text-gray-500 mt-3">Contact us to check availability and pricing for upcoming open courses.</p>
+          <p className="text-sm text-gray-600 mt-3">Contact us to check availability and pricing for upcoming open courses.</p>
         </div>
       </section>
 
       {/* CONSULTANCY */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Leadership and consultancy</h2>
+          <h2 className="text-3xl font-bold text-brand-ink mb-2">Leadership and consultancy</h2>
           <p className="text-gray-600 mb-8">Positive Cultures also provides consultancy support to organisations developing their workplace wellbeing strategy.</p>
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="border border-gray-200 rounded-lg p-6 flex flex-col">
-              <h3 className="font-bold text-gray-900 mb-1">Compassionate Leadership Workshop</h3>
+              <h3 className="font-bold text-brand-ink mb-1">Compassionate Leadership Workshop</h3>
               <p className="text-xs text-gray-400 mb-3">Half Day (3 Hours) · Up to 16 delegates</p>
               <p className="text-gray-600 text-sm mb-6 flex-1">Supporting managers and leaders to build psychologically safe teams, develop compassionate leadership skills, and respond confidently to wellbeing concerns.</p>
               <div><EnquireButton label="Enquire about pricing" /></div>
             </div>
             <div className="border border-gray-200 rounded-lg p-6 flex flex-col">
-              <h3 className="font-bold text-gray-900 mb-1">Mental Health and Wellbeing Consultancy</h3>
+              <h3 className="font-bold text-brand-ink mb-1">Mental Health and Wellbeing Consultancy</h3>
               <p className="text-xs text-gray-400 mb-3">Half day or full day · Bespoke support for your organisation</p>
               <p className="text-gray-600 text-sm mb-6 flex-1">Workplace wellbeing strategies, mental health policy review, staff wellbeing initiatives, culture development, and manager training. Areas of focus agreed to suit your needs.</p>
               <div><EnquireButton label="Discuss your needs" /></div>
@@ -223,10 +223,10 @@ export default function Pricing() {
       </section>
 
       {/* DISCOUNTS */}
-      <section className="bg-gray-50 py-16 px-4">
+      <section className="bg-brand-mist py-16 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Discounts available</h2>
+            <h2 className="text-3xl font-bold text-brand-ink mb-4">Discounts available</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               Positive Cultures recognises the valuable contribution made by schools, colleges, charities and community organisations. Preferential rates are available for the education sector, social enterprises, charitable organisations, not-for-profit organisations, and community and voluntary groups.
             </p>
@@ -235,11 +235,11 @@ export default function Pricing() {
             </p>
           </div>
           <div className="bg-white border border-gray-200 rounded-lg p-8">
-            <h3 className="font-bold text-gray-900 mb-4">Travel and venue</h3>
+            <h3 className="font-bold text-brand-ink mb-4">Travel and venue</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
               Face-to-face training is usually delivered at your premises, with access to a suitable training room and presentation facilities. If you need a venue arranged, this can be organised and will be included clearly in your quote. Bespoke training can also be delivered online.
             </p>
-            <Link href="/contact" className="text-blue-700 font-medium text-sm hover:underline">
+            <Link href="/contact" className="text-brand-teal font-medium text-sm hover:underline">
               Contact us to discuss →
             </Link>
           </div>
@@ -247,12 +247,12 @@ export default function Pricing() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gray-900 py-20 px-4 text-center">
+      <section className="bg-brand-teal-deep py-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-3">Request a quote</h2>
-        <p className="text-gray-400 mb-8">Every organisation is different. We are happy to discuss your training requirements and provide a tailored quotation to meet your needs.</p>
+        <p className="text-brand-mist mb-8">Every organisation is different. We are happy to discuss your training requirements and provide a tailored quotation to meet your needs.</p>
         <Link
           href="/contact"
-          className="bg-white text-gray-900 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors"
+          className="bg-brand-sunrise text-brand-teal-deep font-semibold px-8 py-3 rounded hover:bg-brand-sunrise-light transition-colors"
         >
           Get in touch
         </Link>

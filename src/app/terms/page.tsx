@@ -5,8 +5,8 @@ export default function Terms() {
     <>
       <section className="bg-white py-16 px-4 border-b border-gray-100">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">Terms of Use</h1>
-          <p className="text-gray-500 text-sm">Last updated: September 2026</p>
+          <h1 className="text-4xl font-bold text-brand-ink mb-3">Terms of Use</h1>
+          <p className="text-gray-600 text-sm">Last updated: September 2026</p>
         </div>
       </section>
 
@@ -14,7 +14,7 @@ export default function Terms() {
         <div className="max-w-3xl mx-auto space-y-10 text-gray-600 leading-relaxed">
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">About this website</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">About this website</h2>
             <p>
               This website (positivecultures.co.uk) is operated by Positive Cultures Training and Consultancy, a sole trader
               business run by David Scott. By accessing and using this website, you agree to these terms of use.
@@ -23,7 +23,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Use of this website</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Use of this website</h2>
             <p>
               This website is provided for informational purposes and to allow you to make enquiries about our training and
               consultancy services. You agree to use it only for lawful purposes and in a way that does not infringe the
@@ -36,7 +36,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Accuracy of information</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Accuracy of information</h2>
             <p>
               We take care to ensure that the information on this website is accurate and up to date. However, we make no
               warranty — express or implied — that any content is complete, accurate or current. Pricing, course details
@@ -49,7 +49,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Training bookings</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Training bookings</h2>
             <p>
               Enquiries submitted through this website do not constitute a binding contract. A booking is confirmed only
               when both parties have agreed in writing to the course, date, venue and fee. Full terms and conditions of
@@ -58,7 +58,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Intellectual property</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Intellectual property</h2>
             <p>
               All content on this website — including text, design, graphics and the Positive Cultures logo — is owned by
               or licensed to Positive Cultures Training and Consultancy. You may not reproduce, distribute or use any
@@ -67,7 +67,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Links to other websites</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Links to other websites</h2>
             <p>
               This website may contain links to external websites. These links are provided for your convenience. We are
               not responsible for the content, privacy practices or accuracy of external sites, and a link does not
@@ -76,7 +76,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Limitation of liability</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Limitation of liability</h2>
             <p>
               To the extent permitted by law, Positive Cultures Training and Consultancy excludes all liability for any
               loss or damage arising from your use of this website or reliance on its content. This does not affect any
@@ -86,7 +86,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Governing law</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Governing law</h2>
             <p>
               These terms are governed by the laws of England and Wales. Any disputes arising from your use of this
               website will be subject to the exclusive jurisdiction of the courts of England and Wales.
@@ -94,7 +94,7 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Changes to these terms</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Changes to these terms</h2>
             <p>
               We may update these terms from time to time. The date at the top of this page shows when they were last
               revised. Continued use of the website after any changes constitutes your acceptance of the updated terms.
@@ -102,11 +102,11 @@ export default function Terms() {
           </div>
 
           <div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Contact</h2>
+            <h2 className="text-xl font-bold text-brand-ink mb-3">Contact</h2>
             <p>
               If you have any questions about these terms, please{" "}
-              <Link href="/contact" className="text-blue-700 hover:underline">get in touch</Link> or email{" "}
-              <a href="mailto:positiveculture@gmail.com" className="text-blue-700 hover:underline">
+              <Link href="/contact" className="text-brand-teal hover:underline">get in touch</Link> or email{" "}
+              <a href="mailto:positiveculture@gmail.com" className="text-brand-teal hover:underline">
                 positiveculture@gmail.com
               </a>.
             </p>
@@ -115,10 +115,10 @@ export default function Terms() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-12 px-4 border-t border-gray-100 text-center">
-        <p className="text-gray-500 text-sm">
-          See also our <Link href="/privacy" className="text-blue-700 hover:underline">Privacy Policy</Link> and{" "}
-          <Link href="/cookies" className="text-blue-700 hover:underline">Cookies Policy</Link>.
+      <section className="bg-brand-mist py-12 px-4 border-t border-gray-100 text-center">
+        <p className="text-gray-600 text-sm">
+          See also our <Link href="/privacy" className="text-brand-teal hover:underline">Privacy Policy</Link> and{" "}
+          <Link href="/cookies" className="text-brand-teal hover:underline">Cookies Policy</Link>.
         </p>
       </section>
     </>

@@ -28,7 +28,7 @@ const legal = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-brand-ink text-gray-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Tagline */}
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-10 pt-6 text-xs text-gray-500">
+        <div className="border-t border-gray-800 mt-10 pt-6 text-xs text-gray-400">
           © {new Date().getFullYear()} Positive Cultures Training and Consultancy. All rights reserved.
         </div>
       </div>

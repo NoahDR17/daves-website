@@ -158,18 +158,18 @@ export default function FAQs() {
     <>
       <section className="bg-white py-16 px-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Frequently asked questions</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-ink mb-4">Frequently asked questions</h1>
           <p className="text-lg text-gray-600">
             Answers to the questions we get most often. If yours isn&apos;t here,{" "}
-            <Link href="/contact" className="text-blue-700 hover:underline">drop us a line</Link>.
+            <Link href="/contact" className="text-brand-teal hover:underline">drop us a line</Link>.
           </p>
         </div>
       </section>
 
-      <section className="bg-gray-50 border-b border-gray-100 py-4 px-4 sticky top-0 z-10">
+      <section className="bg-brand-mist border-b border-gray-100 py-4 px-4 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto flex flex-wrap gap-4">
           {categories.map((cat) => (
-            <a key={cat.id} href={`#${cat.id}`} className="text-sm font-medium text-gray-600 hover:text-blue-700 transition-colors">
+            <a key={cat.id} href={`#${cat.id}`} className="text-sm font-medium text-gray-600 hover:text-brand-teal transition-colors">
               {cat.label}
             </a>
           ))}
@@ -179,12 +179,12 @@ export default function FAQs() {
       <div className="max-w-3xl mx-auto px-4 py-16 space-y-16">
         {categories.map((cat) => (
           <section key={cat.id} id={cat.id}>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">{cat.label}</h2>
+            <h2 className="text-2xl font-bold text-brand-ink mb-6">{cat.label}</h2>
             <div className="divide-y divide-gray-200 border-y border-gray-200">
               {cat.faqs.map((faq) => (
                 <details key={faq.q} className="group py-4">
                   <summary className="flex justify-between items-center cursor-pointer list-none gap-4">
-                    <span className="font-medium text-gray-900">{faq.q}</span>
+                    <span className="font-medium text-brand-ink">{faq.q}</span>
                     <span className="text-gray-400 group-open:rotate-45 transition-transform text-xl leading-none shrink-0">+</span>
                   </summary>
                   <p className="mt-3 text-gray-600 text-sm leading-relaxed">{faq.a}</p>
@@ -195,10 +195,10 @@ export default function FAQs() {
         ))}
       </div>
 
-      <section className="bg-gray-900 py-20 px-4 text-center">
+      <section className="bg-brand-teal-deep py-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-3">Didn&apos;t find your answer?</h2>
-        <p className="text-gray-400 mb-8">Drop us a note — most enquiries get a personal reply from David within two working days.</p>
-        <Link href="/contact" className="bg-white text-gray-900 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors">
+        <p className="text-brand-mist mb-8">Drop us a note — most enquiries get a personal reply from David within two working days.</p>
+        <Link href="/contact" className="bg-brand-sunrise text-brand-teal-deep font-semibold px-8 py-3 rounded hover:bg-brand-sunrise-light transition-colors">
           Ask a question
         </Link>
       </section>

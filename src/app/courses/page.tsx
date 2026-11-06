@@ -72,7 +72,7 @@ export default function Courses() {
           <p className="text-sm text-gray-400 mb-3">
             <Link href="/" className="hover:text-gray-600">Home</Link> → Courses
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Courses</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-ink mb-4">Courses</h1>
           <p className="text-lg text-gray-600 max-w-2xl">
             Five FAA Ofqual-regulated mental health first aid qualifications, from a four-hour awareness session through to the comprehensive two-day Level 3 award. All delivered in person by David, at your workplace or a venue of your choice.
           </p>
@@ -80,19 +80,19 @@ export default function Courses() {
       </section>
 
       {/* COURSE FINDER */}
-      <section className="bg-gray-50 py-16 px-4">
+      <section className="bg-brand-mist py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Which course is right for you?</h2>
-          <p className="text-gray-500 mb-8 text-sm">Pick the scenario that fits your situation.</p>
+          <h2 className="text-2xl font-bold text-brand-ink mb-2">Which course is right for you?</h2>
+          <p className="text-gray-600 mb-8 text-sm">Pick the scenario that fits your situation.</p>
           <div className="grid sm:grid-cols-2 gap-4">
             {finder.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="group bg-white border border-gray-200 rounded-lg p-5 hover:border-blue-700 hover:shadow-sm transition-all"
+                className="group bg-white border border-gray-200 rounded-lg p-5 hover:border-brand-teal hover:shadow-sm transition-all"
               >
                 <p className="text-gray-700 italic mb-2">{item.scenario}</p>
-                <p className="text-blue-700 font-medium text-sm group-hover:underline">
+                <p className="text-brand-teal font-medium text-sm group-hover:underline">
                   → {item.label}
                 </p>
               </Link>
@@ -104,50 +104,50 @@ export default function Courses() {
       {/* COURSE CARDS */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">All courses</h2>
+          <h2 className="text-2xl font-bold text-brand-ink mb-8">All courses</h2>
           <div className="space-y-4">
             {courses.map((course) => (
               <Link
                 key={course.href}
                 href={course.href}
-                className="group flex flex-col sm:flex-row sm:items-center gap-4 border border-gray-200 rounded-lg p-6 hover:border-blue-700 hover:shadow-sm transition-all"
+                className="group flex flex-col sm:flex-row sm:items-center gap-4 border border-gray-200 rounded-lg p-6 hover:border-brand-teal hover:shadow-sm transition-all"
               >
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
                     {course.badge && (
-                      <span className="text-xs font-semibold bg-blue-700 text-white px-2 py-0.5 rounded">
+                      <span className="text-xs font-semibold bg-brand-teal-deep text-white px-2 py-0.5 rounded">
                         {course.badge}
                       </span>
                     )}
-                    <h3 className="font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
+                    <h3 className="font-bold text-brand-ink group-hover:text-brand-teal transition-colors">
                       {course.title}
                     </h3>
                   </div>
-                  <p className="text-gray-500 text-sm">{course.desc}</p>
+                  <p className="text-gray-600 text-sm">{course.desc}</p>
                 </div>
                 <div className="flex sm:flex-col gap-4 sm:gap-1 sm:text-right shrink-0">
-                  <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">{course.duration}</span>
+                  <span className="text-xs font-semibold text-brand-teal uppercase tracking-wide">{course.duration}</span>
                   <span className="text-xs text-gray-400">{course.format}{course.maxGroup ? ` · ${course.maxGroup}` : ""}</span>
                 </div>
               </Link>
             ))}
             <Link
               href="/bespoke-training"
-              className="group flex flex-col sm:flex-row sm:items-center gap-4 border border-blue-200 bg-blue-50 rounded-lg p-6 hover:border-blue-700 hover:shadow-sm transition-all"
+              className="group flex flex-col sm:flex-row sm:items-center gap-4 border border-brand-sage bg-brand-mist rounded-lg p-6 hover:border-brand-teal hover:shadow-sm transition-all"
             >
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-xs font-semibold bg-white text-blue-700 border border-blue-200 px-2 py-0.5 rounded">
+                  <span className="text-xs font-semibold bg-white text-brand-teal border border-brand-sage px-2 py-0.5 rounded">
                     Bespoke
                   </span>
-                  <h3 className="font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
+                  <h3 className="font-bold text-brand-ink group-hover:text-brand-teal transition-colors">
                     Bespoke Mental Health Training
                   </h3>
                 </div>
-                <p className="text-gray-500 text-sm">Training packages tailored to your staff, covering topics such as gambling harm, anxiety and stress management, team building and staff supervision.</p>
+                <p className="text-gray-600 text-sm">Training packages tailored to your staff, covering topics such as gambling harm, anxiety and stress management, team building and staff supervision.</p>
               </div>
               <div className="flex sm:flex-col gap-4 sm:gap-1 sm:text-right shrink-0">
-                <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">Tailored</span>
+                <span className="text-xs font-semibold text-brand-teal uppercase tracking-wide">Tailored</span>
                 <span className="text-xs text-gray-400">Online or face to face</span>
               </div>
             </Link>
@@ -156,9 +156,9 @@ export default function Courses() {
       </section>
 
       {/* COMPARISON TABLE */}
-      <section className="bg-gray-50 py-16 px-4">
+      <section className="bg-brand-mist py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">At a glance</h2>
+          <h2 className="text-2xl font-bold text-brand-ink mb-8">At a glance</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
@@ -173,7 +173,7 @@ export default function Courses() {
                 {comparison.map((row) => (
                   <tr key={row.href} className="group">
                     <td className="py-3 pr-6">
-                      <Link href={row.href} className="text-blue-700 hover:underline font-medium">
+                      <Link href={row.href} className="text-brand-teal hover:underline font-medium">
                         {row.title}
                       </Link>
                     </td>
@@ -185,8 +185,8 @@ export default function Courses() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-gray-500 mt-4">
-            All qualifications are FAA Ofqual-regulated. Need something different? <Link href="/bespoke-training" className="text-blue-700 hover:underline">Explore bespoke training →</Link> · <Link href="/pricing" className="text-blue-700 hover:underline">How pricing works →</Link>
+          <p className="text-sm text-gray-600 mt-4">
+            All qualifications are FAA Ofqual-regulated. Need something different? <Link href="/bespoke-training" className="text-brand-teal hover:underline">Explore bespoke training →</Link> · <Link href="/pricing" className="text-brand-teal hover:underline">How pricing works →</Link>
           </p>
         </div>
       </section>
@@ -198,23 +198,23 @@ export default function Courses() {
             [David]
           </div>
           <div className="flex-1">
-            <h2 className="font-bold text-gray-900 mb-1">All courses are taught by David Scott</h2>
+            <h2 className="font-bold text-brand-ink mb-1">All courses are taught by David Scott</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               A Registered Mental Health Nurse with over 25 years of NHS clinical experience. Not just a trainer — someone who has spent decades on the frontline of mental health care, bringing real clinical depth into every training room.
             </p>
           </div>
-          <Link href="/about" className="shrink-0 text-blue-700 font-medium text-sm hover:underline whitespace-nowrap">
+          <Link href="/about" className="shrink-0 text-brand-teal font-medium text-sm hover:underline whitespace-nowrap">
             Meet David →
           </Link>
         </div>
       </section>
 
       {/* STILL UNSURE */}
-      <section className="bg-gray-50 py-12 px-4">
+      <section className="bg-brand-mist py-12 px-4">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <p className="font-semibold text-gray-900">Still not sure which course you need?</p>
-            <p className="text-gray-500 text-sm">Tell us a bit about your organisation and we&apos;ll recommend the right one. No obligation.</p>
+            <p className="font-semibold text-brand-ink">Still not sure which course you need?</p>
+            <p className="text-gray-600 text-sm">Tell us a bit about your organisation and we&apos;ll recommend the right one. No obligation.</p>
           </div>
           <Link
             href="/contact"
@@ -226,12 +226,12 @@ export default function Courses() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="bg-gray-900 py-20 px-4 text-center">
+      <section className="bg-brand-teal-deep py-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-3">Ready to book training for your team?</h2>
-        <p className="text-gray-400 mb-8">Enquire now and David will be in touch within two working days.</p>
+        <p className="text-brand-mist mb-8">Enquire now and David will be in touch within two working days.</p>
         <Link
           href="/contact"
-          className="bg-white text-gray-900 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors"
+          className="bg-brand-sunrise text-brand-teal-deep font-semibold px-8 py-3 rounded hover:bg-brand-sunrise-light transition-colors"
         >
           Enquire about training
         </Link>

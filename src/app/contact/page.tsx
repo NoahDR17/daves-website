@@ -50,8 +50,8 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="bg-white py-16 px-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">Get in touch</h1>
-          <p className="text-gray-500 text-lg">
+          <h1 className="text-4xl font-bold text-brand-ink mb-3">Get in touch</h1>
+          <p className="text-gray-600 text-lg">
             Use the form below, give David a ring, or drop him an email. Most enquiries get a response within two working days.
           </p>
         </div>
@@ -80,8 +80,8 @@ export default function ContactPage() {
                       onClick={() => setEnquiryType("organisation")}
                       className={`px-5 py-2.5 text-sm font-medium transition-colors ${
                         enquiryType === "organisation"
-                          ? "bg-blue-700 text-white"
-                          : "bg-white text-gray-600 hover:bg-gray-50"
+                          ? "bg-brand-teal-deep text-white"
+                          : "bg-white text-gray-600 hover:bg-brand-mist"
                       }`}
                     >
                       An organisation
@@ -91,8 +91,8 @@ export default function ContactPage() {
                       onClick={() => setEnquiryType("individual")}
                       className={`px-5 py-2.5 text-sm font-medium transition-colors border-l border-gray-200 ${
                         enquiryType === "individual"
-                          ? "bg-blue-700 text-white"
-                          : "bg-white text-gray-600 hover:bg-gray-50"
+                          ? "bg-brand-teal-deep text-white"
+                          : "bg-white text-gray-600 hover:bg-brand-mist"
                       }`}
                     >
                       An individual
@@ -108,7 +108,7 @@ export default function ContactPage() {
                     name="name"
                     type="text"
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent"
                   />
                 </div>
 
@@ -120,7 +120,7 @@ export default function ContactPage() {
                       id="organisation"
                       name="organisation"
                       type="text"
-                      className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent"
+                      className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent"
                     />
                   </div>
                 )}
@@ -133,7 +133,7 @@ export default function ContactPage() {
                     name="email"
                     type="email"
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent"
                   />
                 </div>
 
@@ -146,7 +146,7 @@ export default function ContactPage() {
                     id="phone"
                     name="phone"
                     type="tel"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent"
                   />
                 </div>
 
@@ -158,7 +158,7 @@ export default function ContactPage() {
                   <select
                     id="course"
                     name="course"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent bg-white"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent bg-white"
                   >
                     {courses.map((c) => (
                       <option key={c} value={c}>{c}</option>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                     name="message"
                     rows={5}
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent resize-none"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent resize-none"
                   />
                 </div>
 
@@ -185,7 +185,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="bg-blue-700 text-white font-medium px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                  className="bg-brand-sunrise text-brand-teal-deep font-medium px-8 py-3 rounded-lg hover:bg-brand-sunrise-light transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   {status === "submitting" ? "Sending..." : "Send enquiry"}
                 </button>
@@ -195,16 +195,16 @@ export default function ContactPage() {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6 space-y-5">
+            <div className="bg-brand-mist rounded-lg p-6 space-y-5">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1">Phone</p>
-                <a href="tel:07766226010" className="text-gray-900 font-medium hover:text-blue-700 transition-colors">
+                <a href="tel:07766226010" className="text-brand-ink font-medium hover:text-brand-teal transition-colors">
                   07766 226010
                 </a>
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1">Email</p>
-                <a href="mailto:positiveculture@gmail.com" className="text-gray-900 font-medium hover:text-blue-700 transition-colors break-all">
+                <a href="mailto:positiveculture@gmail.com" className="text-brand-ink font-medium hover:text-brand-teal transition-colors break-all">
                   positiveculture@gmail.com
                 </a>
               </div>
@@ -222,9 +222,9 @@ export default function ContactPage() {
       </section>
 
       {/* WHAT HAPPENS NEXT */}
-      <section className="bg-gray-50 py-16 px-4 border-t border-gray-100">
+      <section className="bg-brand-mist py-16 px-4 border-t border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">What happens after you enquire</h2>
+          <h2 className="text-2xl font-bold text-brand-ink mb-8">What happens after you enquire</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               { tag: "Within 2 days", title: "A personal reply", desc: "From David, not an assistant." },
@@ -232,9 +232,9 @@ export default function ContactPage() {
               { tag: "Then", title: "A written quote", desc: "Clear, all-in, no surprises." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 border border-gray-100">
-                <p className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-2">{item.tag}</p>
-                <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                <p className="text-gray-500 text-sm">{item.desc}</p>
+                <p className="text-xs font-semibold text-brand-teal uppercase tracking-wide mb-2">{item.tag}</p>
+                <h3 className="font-bold text-brand-ink mb-1">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
