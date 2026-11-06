@@ -11,6 +11,8 @@ const courses = [
   "Supervising First Aid for Mental Health (2 days)",
   "Youth Mental Health First Aid (1 day)",
   "Annual Refresher (half day)",
+  "Bespoke mental health training",
+  "Leadership or consultancy",
 ];
 
 export default function ContactPage() {

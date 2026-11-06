@@ -6,6 +6,7 @@ const courses = [
   { href: "/courses/mhfa-supervising", label: "Supervising First Aid for Mental Health" },
   { href: "/courses/youth-mental-health", label: "Youth Mental Health First Aid" },
   { href: "/courses/refresher", label: "Annual Refresher" },
+  { href: "/bespoke-training", label: "Bespoke Training" },
 ];
 
 const info = [

@@ -59,7 +59,7 @@ const course: CourseData = {
     },
     {
       q: "What does it cost?",
-      a: "Up to 12 delegates: £1,150. 13–16 delegates: £1,295. Individual places on open courses are available at £175 per person. Contact us for a quote.",
+      a: "Pricing is tailored to your organisation, based on group size, location and whether you are booking a group session or an individual place. Get in touch for a transparent, no-obligation quote.",
     },
     {
       q: "What if I want to attend as an individual?",

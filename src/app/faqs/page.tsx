@@ -71,7 +71,7 @@ const categories = [
       },
       {
         q: "What's the minimum and maximum group size?",
-        a: "Most courses accommodate up to 16 people per session, with two pricing tiers: up to 12 delegates, and 13–16 delegates. The Level 1 awareness session can be more flexible for larger groups — get in touch with your numbers and David will advise.",
+        a: "Most courses accommodate up to 16 people per session. The Level 1 awareness session can be more flexible for larger groups — get in touch with your numbers and David will advise.",
       },
       {
         q: "What area does David cover?",
@@ -79,7 +79,7 @@ const categories = [
       },
       {
         q: "How much does it cost?",
-        a: "All courses are quoted per session, not per head. Prices range from £595 for the refresher to £2,250 for the two-day Level 3 qualification. See the pricing page for full details, or contact us for a tailored quote.",
+        a: "Pricing is transparent and tailored to your organisation, based on the course or bespoke training you need, your group size, delivery format and location. Preferential rates are available for education, charity and community organisations. Get in touch for a no-obligation quote.",
       },
       {
         q: "How is payment handled?",
@@ -92,6 +92,10 @@ const categories = [
       {
         q: "Can you run a course over multiple half-days?",
         a: "In some cases, yes. If your operational needs make a single full-day or two-day block difficult, get in touch and David will discuss what can be arranged.",
+      },
+      {
+        q: "Do you offer bespoke mental health training?",
+        a: "Yes. Alongside the accredited MHFA courses, David designs bespoke mental health training packages tailored to your staff. Topics include gambling harm, anxiety management, stress management, team building day facilitation, management training on changing workplace mental health culture, and staff supervision. Sessions can be delivered online or face to face. See our bespoke training page or get in touch to discuss your needs.",
       },
       {
         q: "Will Mental Health First Aid become mandatory?",
@@ -139,11 +143,11 @@ const categories = [
       },
       {
         q: "Does Positive Cultures offer consultancy as well as training?",
-        a: "Yes. Positive Cultures provides consultancy support to organisations seeking to develop positive workplace wellbeing strategies, improve mental health awareness, support staff wellbeing initiatives, enhance psychological safety in teams, and review policies and procedures relating to employee wellbeing. See the pricing page for consultancy rates or contact us to discuss your needs.",
+        a: "Yes. Positive Cultures provides consultancy support to organisations seeking to develop positive workplace wellbeing strategies, improve mental health awareness, support staff wellbeing initiatives, enhance psychological safety in teams, and review policies and procedures relating to employee wellbeing. Consultancy is quoted to suit your needs, so contact us to discuss what you are looking for.",
       },
       {
         q: "How can we book training?",
-        a: "Positive Cultures offers on-site workplace training, education sector training, NHS and healthcare training, charity and voluntary sector training, bespoke mental health awareness workshops, and mental health consultancy services. To discuss your requirements, get in touch for a no-obligation conversation about how we can support your organisation.",
+        a: "Positive Cultures offers on-site workplace training, education sector training, NHS and healthcare training, charity and voluntary sector training, bespoke mental health training packages delivered online or face to face, and mental health consultancy services. To discuss your requirements, get in touch for a no-obligation conversation about how we can support your organisation.",
       },
     ],
   },

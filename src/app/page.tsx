@@ -68,7 +68,7 @@ export default function Home() {
                 Positive Cultures is a specialist mental health training and consultancy company founded by David Scott, a highly experienced Mental Health Nurse with over 25 years of clinical practice across mental health liaison and crisis services, low secure services, community mental health, and acute and complex care.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Drawing on extensive frontline experience, Positive Cultures delivers practical, engaging and evidence-based mental health training that helps organisations create safer, healthier and more supportive workplaces. As a trained instructor through NUCO Training, David delivers FAA Ofqual-regulated qualifications — providing nationally recognised training that develops confidence, knowledge and practical skills.
+                Drawing on extensive frontline experience, Positive Cultures delivers practical, engaging and evidence-based mental health training that helps organisations create safer, healthier and more supportive workplaces. As a trained instructor through NUCO Training, David delivers FAA Ofqual-regulated qualifications, providing nationally recognised training that develops confidence, knowledge and practical skills.
               </p>
               <p className="text-gray-600 leading-relaxed italic">
                 &ldquo;Creating workplaces where people feel heard, supported and able to thrive.&rdquo;
@@ -149,9 +149,16 @@ export default function Home() {
               </Link>
             ))}
             <Link
-              href="/courses"
-              className="border border-dashed border-gray-300 rounded-lg p-6 flex items-center justify-center text-gray-500 hover:border-blue-700 hover:text-blue-700 transition-all text-sm font-medium"
+              href="/bespoke-training"
+              className="group border border-blue-200 bg-blue-50 rounded-lg p-6 hover:border-blue-700 hover:shadow-md transition-all"
             >
+              <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">Online or face to face</span>
+              <h3 className="font-bold text-gray-900 mt-1 mb-2 group-hover:text-blue-700 transition-colors">Bespoke Mental Health Training</h3>
+              <p className="text-gray-500 text-sm">Tailored packages including gambling harm awareness and team building day facilitation.</p>
+            </Link>
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/courses" className="text-blue-700 font-medium hover:underline">
               View all courses →
             </Link>
           </div>

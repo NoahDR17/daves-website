@@ -17,7 +17,7 @@ const benefits = [
 
 const steps = [
   { step: "01", title: "You enquire", desc: "Share what your team needs and roughly when. Form, email, or phone." },
-  { step: "02", title: "A short scoping call", desc: "David gets a feel for your team, current challenges, and recommends the right course." },
+  { step: "02", title: "A short scoping call", desc: "David gets a feel for your team, current challenges, and recommends the right course or a bespoke training package." },
   { step: "03", title: "We agree the details", desc: "Course, dates, venue, group size, invoicing. Written quote with everything included." },
   { step: "04", title: "David delivers the training", desc: "In person at your venue. Manuals provided. Certificates issued shortly after." },
   { step: "05", title: "Ongoing support", desc: "MHFAider Support App access for 3 years. A reminder when refreshers are due." },

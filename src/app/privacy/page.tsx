@@ -23,7 +23,7 @@ export default function Privacy() {
               <strong className="text-gray-900">Contact:</strong> positiveculture@gmail.com
             </p>
             <p className="mt-1">
-              <strong className="text-gray-900">ICO Registration Number:</strong> [ICO Registration Number — please add]
+              <strong className="text-gray-900">ICO Registration Number:</strong> ZC175421
             </p>
           </div>
 

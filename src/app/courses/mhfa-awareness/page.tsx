@@ -51,7 +51,7 @@ const course: CourseData = {
   faqs: [
     {
       q: "Is there a maximum group size?",
-      a: "Standard group pricing covers up to 16 delegates. For larger groups, contact us and David will advise on the best format.",
+      a: "Standard group sessions cover up to 16 delegates. For larger groups, contact us and David will advise on the best format.",
     },
     {
       q: "Is this the same as the full one-day or two-day course?",
@@ -59,7 +59,7 @@ const course: CourseData = {
     },
     {
       q: "What does it cost?",
-      a: "Up to 12 delegates: £695. 13–16 delegates: £795. Individual places on open courses are available at £95 per person. Contact us for a quote.",
+      a: "Pricing is tailored to your organisation, based on group size, location and whether you are booking a group session or an individual place. Get in touch for a transparent, no-obligation quote.",
     },
     {
       q: "Where does the course take place?",

@@ -131,6 +131,26 @@ export default function Courses() {
                 </div>
               </Link>
             ))}
+            <Link
+              href="/bespoke-training"
+              className="group flex flex-col sm:flex-row sm:items-center gap-4 border border-blue-200 bg-blue-50 rounded-lg p-6 hover:border-blue-700 hover:shadow-sm transition-all"
+            >
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-xs font-semibold bg-white text-blue-700 border border-blue-200 px-2 py-0.5 rounded">
+                    Bespoke
+                  </span>
+                  <h3 className="font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
+                    Bespoke Mental Health Training
+                  </h3>
+                </div>
+                <p className="text-gray-500 text-sm">Training packages tailored to your staff, covering topics such as gambling harm, anxiety and stress management, team building and staff supervision.</p>
+              </div>
+              <div className="flex sm:flex-col gap-4 sm:gap-1 sm:text-right shrink-0">
+                <span className="text-xs font-semibold text-blue-700 uppercase tracking-wide">Tailored</span>
+                <span className="text-xs text-gray-400">Online or face to face</span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -166,7 +186,7 @@ export default function Courses() {
             </table>
           </div>
           <p className="text-sm text-gray-500 mt-4">
-            All qualifications are FAA Ofqual-regulated. <Link href="/pricing" className="text-blue-700 hover:underline">View pricing →</Link>
+            All qualifications are FAA Ofqual-regulated. Need something different? <Link href="/bespoke-training" className="text-blue-700 hover:underline">Explore bespoke training →</Link> · <Link href="/pricing" className="text-blue-700 hover:underline">How pricing works →</Link>
           </p>
         </div>
       </section>

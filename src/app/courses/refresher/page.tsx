@@ -6,7 +6,7 @@ const course: CourseData = {
   title: "First Aid for Mental Health Annual Refresher",
   description:
     "For individuals who have previously completed a Mental Health First Aid qualification. The refresher revisits key principles, updates knowledge on current approaches, and helps maintain confidence and competence in the first aider role.",
-  length: "3 hours",
+  length: "4 hours",
   groupSize: "Up to 16",
   format: "In person",
   certified: "Re-certification · 3 years",
@@ -59,7 +59,7 @@ const course: CourseData = {
     },
     {
       q: "What does it cost?",
-      a: "Up to 12 delegates: £595. 13–16 delegates: £695. Individual places on open courses are available at £75 per person. Contact us for a quote.",
+      a: "Pricing is tailored to your organisation, based on group size, location and whether you are booking a group session or an individual place. Get in touch for a transparent, no-obligation quote.",
     },
     {
       q: "Where does the course take place?",
